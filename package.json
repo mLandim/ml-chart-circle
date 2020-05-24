@@ -1,0 +1,40 @@
+{
+  "name": "ml-chart-circle",
+  "version": "1.0.0",
+  "description": "vue experimental component for circle chart",
+  "main": "dist/ml-chart-circle.umd.js",
+  "module": "dist/ml-chart-circle.esm.js",
+  "unpkg": "dist/ml-chart-circle.min.js",
+  "browser": {
+    "./sfc": "src/ml-chart-circle.vue"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/ml-chart-circle.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/ml-chart-circle.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/ml-chart-circle.min.js"
+  },
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mLandim/ml-chart-circle.git"
+  },
+  "keywords": [
+    "chart",
+    "vue"
+  ],
+  "author": "mlandim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mLandim/ml-chart-circle/issues"
+  },
+  "homepage": "https://github.com/mLandim/ml-chart-circle#readme"
+  
+}
